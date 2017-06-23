@@ -1,0 +1,14 @@
+---
+title: "iris"
+output: html_document
+---
+
+
+```{r}
+library(plotly)
+data("iris")
+plot_ly(iris,x= iris$Sepal.Length, y=iris$Petal.Length, color=iris$Species,type="scatter",mode="markers")%>%
+layout(xaxis =list(title='Sepal_Length'),yaxis = list(title='Petal Length'))
+
+```
+
